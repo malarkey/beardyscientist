@@ -23,8 +23,6 @@
 --color-background-selection: #D3D3E1;
 --color-border: #D8D8D8;
 --color-text-default: #000F00;
---color-text-alt: var(--color-text-default);
---color-base: #F0F0F5;
 --color-accent: #503981;
 --color-text-link: #503981;
 --color-text-link-active: var(--color-text-link);
@@ -49,6 +47,20 @@
 --spacing-large: 1.5rem;
 --spacing-x-large: 2rem;
 --spacing-xx-large: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--color-background: #070220;
+--color-background-selection: #000F00;
+--color-border: #190C41;
+--color-text-default: #fff;
+--color-accent: #503981;
+--color-text-link: #CE0058;
+--color-text-link-active: var(--color-text-link);
+--color-text-link-focus: var(--color-text-link);
+--color-text-link-hover: var(--color-accent);
+--color-text-link-visited: var(--color-text-link); }
 }
 
 /* =viewport */
